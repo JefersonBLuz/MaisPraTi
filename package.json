@@ -2,5 +2,16 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node ./Modulo_1/app.js",
+    "prod": "cross-env NODE_ENV=production node ./Modulo_1/app.js"
+  },
+  "name": "maisprati",
+  "version": "1.0.0",
+  "main": "app.js",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

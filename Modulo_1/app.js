@@ -30,6 +30,16 @@ do {
             break;
         case '10': require('./Activities/Activity10')()
             break;
+        case '11': require('./Activities/Activity11')()
+            break;
+        case '12': require('./Activities/Activity12')()
+            break;
+        case '13': require('./Activities/Activity13')()
+            break;
+        case '14': require('./Activities/Activity14')()
+            break;
+        case '15': require('./Activities/Activity15')()
+            break;
         case 'Exit': console.log("Finalizado");
             break;
         default: console.log('Opção informada inexistente!');
