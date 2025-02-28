@@ -2,7 +2,7 @@
 
 **Este repositório reúne todos os projetos desenvolvidos durante a formação de Desenvolvedor Full Stack Jr. da +PraTi.**
 
-Através destes projetos, pude aplicar os conhecimentos adquiridos em tecnologias como JavaScript. Cada projeto apresenta um desafio específico e demonstra meu aprendizado em diferentes áreas do desenvolvimento.
+Através destes projetos, pude aplicar os conhecimentos adquiridos em tecnologias como JavaScript, HTML e CSS. Cada projeto apresenta um desafio específico e demonstra meu aprendizado em diferentes áreas do desenvolvimento.
 
 **O objetivo é criar um portfólio completo e demonstrar minha capacidade de construir aplicações web robustas e eficientes.**
 <hr size="3px" noshade>
@@ -10,6 +10,7 @@ Através destes projetos, pude aplicar os conhecimentos adquiridos em tecnologia
 **Repositório organizado por:_Jeferson Braga_**
 * Módulos do curso
     <a href="/Modulo_1/">JavaScript</a>
+    <a href="/Modulo_2/">HTML & CSS</a>
 * Tipo de projeto (frontend, backend, fullstack)
 
 **Links úteis:**
