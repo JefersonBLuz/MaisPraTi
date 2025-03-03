@@ -7,10 +7,13 @@ Através destes projetos, pude aplicar os conhecimentos adquiridos em tecnologia
 **O objetivo é criar um portfólio completo e demonstrar minha capacidade de construir aplicações web robustas e eficientes.**
 <hr size="3px" noshade>
 
-**Repositório organizado por:_Jeferson Braga_**
-* Módulos do curso
-    <a href="/Modulo_1/">JavaScript</a>
-    <a href="/Modulo_2/">HTML & CSS</a>
+**Repositório organizado por: _Jeferson Braga_**
+* Módulos do curso:
+    1. <a href="/Modulo_1/">JavaScript</a>
+        1. <a href="/Modulo_1/Activity1/">1º Atividade</a>
+        2. <a href="/Modulo_1/Activity2/">2º Atividade</a>
+    2. <a href="/Modulo_2/">HTML & CSS</a>
+        1. <a href="/Modulo_2/Activity3/">3º Atividade</a>
 * Tipo de projeto (frontend, backend, fullstack)
 
 **Links úteis:**
