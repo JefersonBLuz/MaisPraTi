@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeferson Braga">
+    <title>Atividade 5</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center items-center h-screen bg-gray-100 flex-col text-gray-800">
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold text-center">Atividade 5</h1>
+            <form method="post" class="mt-4">
+                <div class="mb-4">
+                    <label for="tarefa" class="block text-sm font-medium text-gray-700">Tarefa</label>
+                    <input type="text" name="name" id="name"
+                        class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                        required>
+                    <button type="submit" class="bg-sky-500 rounded-xl px-5 text-white" >Adicionar Tarefa</button>
+                </div>
+            </form>
+        </div>
+        <div id="tarefas">
+
+        </div>
+    </main>
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+
+</html>
