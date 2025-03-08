@@ -11,10 +11,14 @@
     <title>Atividade 4</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=paid" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=paid" /> <!-- Material Symbols Outlined -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!-- Swiper CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- Swiper JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS JS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script> <!-- Tailwind CSS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> <!-- EmailJS -->
+
 </head>
 
 <body class="flex flex-col h-screen bg-secondary p-0">
@@ -61,7 +65,7 @@
                 <div class="md:block md:text-end md:pr-4 self-center md:w-1/2 text-white">
                     <button
                         class="bg-tertiary hover:bg-quaternary md:rounded-lg px-2 py-2 md:py-1 w-full md:w-auto md:border-1 md:border-black">
-                        <a href="#">Entre em contato</a>
+                        <a href="#contatos">Entre em contato</a>
                     </button>
                 </div>
             </div>
@@ -100,7 +104,7 @@
         <!--Produtos Inicio-->
         <section class="flex flex-col justify-center m-10">
             <h1 id="serviços" class="text-center text-4xl text-white mb-10">Livros</h1>
-            <div class="flex sm:flex-row flex-col">
+            <div class="flex md:flex-row flex-col">
                 <div class="card text-white hover:text-black hover:cursor-pointer">
                     <h1 class="text-center text-xl font-semibold">Bebidas e Poções Mágicas</h1>
                     <img src="assets/img/book-bebidas-e-Poções-Mágicas.png" alt="Bebidas e Poções Mágicas"
@@ -152,30 +156,36 @@
             <h1 id="testemunho" class="text-center text-4xl text-white mb-10">Testemunho</h1>
         </section>
         <!--Testemunhos Fim-->
+        <div id="testemunhos-list" class="grid grid-flow-row-dense grid-flow-col-dense sm:grid-cols-2 xl:grid-cols-3 mb-10">
+
+        </div>
         <!--Contatos Inicio-->
         <div id="contatos"
             class="flex flex-col justify-center items-center p-10 bg-primary text-white m-4 rounded-lg md:w-2/3 w-full">
             <h1 class="text-2xl">Contato</h1>
-            <form method="post" class="w-full">
-                <label for="name">Nome:</label>
-                <input type="text" name="name" id="name" class="w-full p-2 rounded-lg mb-2 bg-white text-black" required>
+            <form class="w-full">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="w-full p-2 rounded-lg mb-2 bg-white text-black"
+                    required>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" class="w-full p-2 rounded-lg mb-2 bg-white text-black" required>
-                <label for="number">Telefone:</label>
-                <input type="text" name="number" id="number" class="w-full p-2 rounded-lg mb-2 bg-white text-black" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" class="w-full p-2 rounded-lg mb-2 bg-white h-28 text-black"
+                <input type="email" name="email" id="email" class="w-full p-2 rounded-lg mb-2 bg-white text-black"
+                    required>
+                <label for="phone">Telefone:</label>
+                <input type="text" name="phone" id="phone" class="w-full p-2 rounded-lg mb-2 bg-white text-black"
+                    required>
+                <label for="menssagem">Mensagem:</label>
+                <textarea name="menssagem" id="menssagem" class="w-full p-2 rounded-lg mb-2 bg-white h-28 text-black"
                     required></textarea>
                 <div class="flex justify-center mt-4">
-                    <button type="button" class="content-center bg-quinary px-4 py-1 rounded-2xl hover:cursor-pointer hover:bg-quaternary">Enviar</button>
+                    <button type="button"
+                        class="content-center bg-quinary px-4 py-1 rounded-2xl hover:cursor-pointer hover:bg-quaternary" onclick="enviarEmail()">Enviar</button>
                 </div>
             </form>
         </div>
         <!--Contatos Fim-->
     </main>
     <footer class="bg-primary text-white ">
-        <div 
-            class="flex flex-col justify-center items-start py-4 2xl:pl-72 xl:pl-48 lg:pl-32 md:pl-18 pl-2">
+        <div class="flex flex-col justify-center items-start py-4 2xl:pl-72 xl:pl-48 lg:pl-32 md:pl-18 pl-2">
             <h1 class="text-xl">Floreios e Borrões</h1>
             <p class="text-sm text-center">Rua das Varinhas, 382 - Lado Norte, Beco Diagonal</p>
             <p class="text-center text-sm">Telefone: (11) 1234-5678</p>
