@@ -34,6 +34,8 @@ async function carregarcomentario() {
         console.log(comentario);
 
         const div = document.createElement('div');
+        div.setAttribute('data-aos', 'fade-right');
+        div.setAttribute('data-aos-duration', '1500');
         div.innerHTML = `
         <div class="bg-quinary p-4 m-2 h-25 rounded-lg hover:scale-105" >
         <p class="text-md font-bold">${comentario.user.fullName}</p>
