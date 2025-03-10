@@ -1,24 +1,15 @@
-# MaisPraTi - Projetos da Formação Full Stack Jr.
+# Listar de tarefas
 
-**Este repositório reúne todos os projetos desenvolvidos durante a formação de Desenvolvedor Full Stack Jr. da +PraTi.**
+Lista de tarefas, adicionar, editar e excluir. Salva no navegador
 
-Através destes projetos, pude aplicar os conhecimentos adquiridos em tecnologias como JavaScript, HTML e CSS. Cada projeto apresenta um desafio específico e demonstra meu aprendizado em diferentes áreas do desenvolvimento.
+* Autor: Jeferson Braga
+* Data: 09 março 2025.
 
-**O objetivo é criar um portfólio completo e demonstrar minha capacidade de construir aplicações web robustas e eficientes.**
-<hr size="3px" noshade>
+## Clonar ativade
 
-**Repositório organizado por: _Jeferson Braga_**
-* Módulos do curso:
-    1. <a href="/Modulo_1/">JavaScript</a>
-        1. <a href="/Modulo_1/Activity1/">1º Atividade</a>
-        2. <a href="/Modulo_1/Activity2/">2º Atividade</a>
-    2. <a href="/Modulo_2/">HTML & CSS</a>
-        1. <a href="/Modulo_2/Activity3/">3º Atividade</a>
-* Tipo de projeto (frontend, backend, fullstack)
+No terminal clone o repositório da atividade 4.
+```sh
+git clone -b Atividade_5 https://github.com/JefersonBLuz/MaisPraTi.git
+```
 
-**Links úteis:**
-* **Site da +PraTi:** https://www.maisprati.com.br
-
-**Sinta-se à vontade para explorar o código, fazer fork dos projetos e entrar em contato para tirar dúvidas.**
-
-**#maisprati #fullstack #desenvolvedor**
+Apos clona acesse a pasta 'MaisPraTi' e inicializa 'index'
