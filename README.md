@@ -7,7 +7,7 @@ Lista de tarefas, adicionar, editar e excluir. Salva no navegador
 
 ## Clonar ativade
 
-No terminal clone o repositório da atividade 4.
+No terminal clone o repositório da atividade 5.
 ```sh
 git clone -b Atividade_5 https://github.com/JefersonBLuz/MaisPraTi.git
 ```
