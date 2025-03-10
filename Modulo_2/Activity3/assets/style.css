@@ -146,15 +146,15 @@ aside {
                 border-radius: 10px;
 
                 &:hover {
-                    transition-duration: 0.4s;
-                    color: #8a6e6e;
+                    transition-duration: 1s;
+                    background-color: #8a7b6e;
                 }
             }
-
             & img {
                 border-radius: 15px;
             }
         }
+        & 
     }
 }
 
