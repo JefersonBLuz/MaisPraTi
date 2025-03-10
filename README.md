@@ -14,6 +14,8 @@ Através destes projetos, pude aplicar os conhecimentos adquiridos em tecnologia
         2. <a href="/Modulo_1/Activity2/">2º Atividade</a>
     2. <a href="/Modulo_2/">HTML & CSS</a>
         1. <a href="/Modulo_2/Activity3/">3º Atividade</a>
+        1. <a href="/Modulo_2/Activity4/">4º Atividade</a>
+        1. <a href="/Modulo_2/Activity5/">5º Atividade</a>
 * Tipo de projeto (frontend, backend, fullstack)
 
 **Links úteis:**
