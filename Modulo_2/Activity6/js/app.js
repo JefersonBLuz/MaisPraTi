@@ -61,3 +61,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function openModalLogin() {
+    console.log('open')
+    const modal = document.getElementById('modal-login');
+    modal.style.display = 'flex'
+}
+function closeModalLogin() {
+    const modal = document.getElementById('modal-login');
+    modal.style.display = 'none'
+}
+
+

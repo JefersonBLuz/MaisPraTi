@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script> <!--Tailwind CSS (Biblioteca Estilização)-->
+    <!--Swiper (Biblioteca Carrosel)-->
+    <title>Gaming Website Landing Page</title>
+    <!-- Define o título da página que aparece na aba do navegador -->
+</head>
+
+<body>
+    <!-- Início do corpo da página -->
+    <!-- Início Cabeçalho da página -->
+    <header>
+        <a href="https://www.nintendo.com/pt-br/" class="logo">
+            <!-- Link com a classe 'logo', utilizado para branding -->
+            <img src="images/nintendo-switch.png" alt="nintendo switch logo" height="240" width="240" />
+            <!-- Exibe o logotipo do Nintendo Switch com altura e largura definidos -->
+        </a>
+        <nav>
+            <!-- Seção de navegação do site -->
+            <ul class="nav">
+                <!-- Lista de itens de navegação -->
+                <li class="hover:bg-white/30 rounded-lg hover:scale-110 duration-300">
+                    <a href="https://www.nintendo.com/us/whatsnew/" target="_blank">Switch News</a>
+                    <!-- Link para notícias do Nintendo Switch, abre em nova aba -->
+                </li>
+                <li class="hover:bg-white/30 rounded-lg hover:scale-110 duration-300">
+                    <a href="https://www.nintendo.com/pt-br/switch/online/" target="_blank">Switch Online</a>
+                    <!-- Link para o serviço online do Switch, abre em nova aba -->
+                </li>
+                <li class="hover:bg-white/30 rounded-lg hover:scale-110 duration-300">
+                    <a href="https://www.nintendo.com/us/switch/online/nintendo-switch-online/classic-games/"
+                        target="_blank">Switch Classic</a>
+                    <!-- Link para os jogos clássicos do Nintendo Switch, abre em nova aba -->
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <!-- Div para a barra de pesquisa -->
+            <input type="text" id="gameInput" placeholder="Search">
+            <!-- Campo de texto para a pesquisa de jogos -->
+        </div>
+        <div class="flex justify-center items-center w-1/8" onclick="openModalLogin()">
+            <!-- Div que contém o botão de login e um campo de texto -->
+            <button
+                class="hover:border border-white p-8 bg-red-600/80 text-white w-3/5 rounded-lg h-8 hover:bg-red-700 cursor-pointer font-bold">Login</button>
+        </div>
+        <!-- Botão para login -->
+        </div>
+    </header>
+    <!-- Fim Cabeçalho da página -->
+    <!-- Início Conteúdo da página -->
+    <main>
+        <section class="swiper">
+            <!-- Contêiner principal do Swiper, o carrossel -->
+            <div class="swiper-wrapper">
+                <!-- Wrapper que envolve os slides -->
+                <!--Banner Mario Inicio-->
+                <div class="swiper-slide" id="slide-1">
+                    <!-- Primeiro slide do carrossel -->
+                    <img src="images/super_mario_odyssey_dinosaur_4k.jpeg" alt="Banner do Super Mario Odyssey">
+                    <!-- Imagem do banner do jogo Super Mario Odyssey -->
+                    <div class="backscene"></div>
+                    <!-- Div para uma camada de fundo -->
+                    <div class="banner">
+                        <!-- Banner de conteúdo adicional -->
+                        <div class="left">
+                            <!-- Seção à esquerda do banner -->
+                            <div class="features">
+                                <!-- Div para exibir as características do jogo -->
+                                <div class="rating flex flex-col t-0">
+                                    <!-- Exibe a nota de avaliação do jogo -->
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col">
+                                            <span
+                                                class="pb-0 mb-0 text-(--primary) text-4xl font-2 self-center">9.2</span>
+                                            <span class="mt-0 pt-0 text-(--primary) self-center">&#9733 &#9733 &#9733
+                                                &#9733
+                                                &#9733</span>
+                                        </div>
+                                        <!-- Nota de avaliação -->
+                                        <div class="flex flex-col justify-center items-center">
+                                            <!-- Conteúdo relacionado à avaliação -->
+                                            <span class="subtitle text-(--primary)">M E T A S C O R E</span>
+                                            <!-- Subtítulo com a palavra "Metascore" -->
+                                            <h4>Ótimo</h4>
+                                        </div>
+                                    </div>
+                                    <div class="content self-center">
+                                        <!-- Classificação "Ótimo" -->
+                                        <span>Descrição do Jogo Mario Odyssey</span>
+                                        <!-- Descrição do jogo -->
+                                    </div>
+                                </div>
+                                <div class="pricing">
+                                    <!-- Seção para exibir informações de compra -->
+                                    <a href="https://www.nintendo.com/us/store/products/super-mario-odyssey-105879/"
+                                        target="_blank">
+                                        <!-- Link vazio para a compra do jogo -->
+                                        <div class="content">
+                                            <!-- Conteúdo relacionado ao preço -->
+                                            <span class="subtitle">Super Mario Odyssey</span>
+                                            <!-- Título do jogo -->
+                                            <h4>COMPRE AGORA</h4>
+                                            <!-- Chamada para compra -->
+                                            <span>Plataforma, Aventura, Ação</span>
+                                            <!-- Categorias do jogo -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h1>Mario</h1>
+                            <!-- Título "Mario" -->
+                        </div>
+                        <img src="images/mario.png" alt="Mario">
+                        <!-- Imagem do personagem Mario -->
+                        <div class="right">
+                            <!-- Seção à direita do banner -->
+                            <ul class="description">
+                                <!-- Lista de descrição do jogo -->
+                                <li class="bg-black/50 rounded-lg flex flex-col">
+                                    <h5 class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <rect width="14" height="0" x="5" y="5" fill="currentColor">
+                                                <animate fill="freeze" attributeName="height" begin="0.6s" dur="0.2s"
+                                                    values="0;3" />
+                                            </rect>
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2">
+                                                <path stroke-dasharray="64" stroke-dashoffset="64"
+                                                    d="M12 4h7c0.55 0 1 0.45 1 1v14c0 0.55 -0.45 1 -1 1h-14c-0.55 0 -1 -0.45 -1 -1v-14c0 -0.55 0.45 -1 1 -1Z">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s"
+                                                        values="64;0" />
+                                                </path>
+                                                <path stroke-dasharray="4" stroke-dashoffset="4" d="M7 4v-2M17 4v-2">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                        begin="0.6s" dur="0.2s" values="4;0" />
+                                                </path>
+                                                <path stroke-dasharray="12" stroke-dashoffset="12" d="M7 11h10">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                        begin="0.8s" dur="0.2s" values="12;0" />
+                                                </path>
+                                                <path stroke-dasharray="8" stroke-dashoffset="8" d="M7 15h7">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="1s"
+                                                        dur="0.2s" values="8;0" />
+                                                </path>
+                                            </g>
+                                        </svg>Data de Lançamento</h5>
+                                    <p> 27 de Outubro 2017</p>
+                                    <!-- Data de lançamento do jogo -->
+                                </li>
+                                <li class="bg-black/50 rounded-lg flex flex-col">
+                                    <h5 class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M15 7.29V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4.29c0 .13.05.26.15.35l2.5 2.5c.2.2.51.2.71 0l2.5-2.5c.09-.09.14-.21.14-.35M7.29 9H3c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h4.29c.13 0 .26-.05.35-.15l2.5-2.5c.2-.2.2-.51 0-.71l-2.5-2.5A.48.48 0 0 0 7.29 9M9 16.71V21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-4.29a.47.47 0 0 0-.15-.35l-2.5-2.5c-.2-.2-.51-.2-.71 0l-2.5 2.5c-.09.09-.14.21-.14.35m7.35-7.56l-2.5 2.5c-.2.2-.2.51 0 .71l2.5 2.5c.09.09.22.15.35.15H21c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1h-4.29a.45.45 0 0 0-.36.14" />
+                                        </svg>Modos de jogo</h5>
+                                    <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+                                    <!-- Modos de jogo disponíveis -->
+                                </li>
+                            </ul>
+
+                            <div
+                                class="flex bg-(--primary)/80 hover:border hover:scale-110 w-100/98 h-auto flex-col text-end text-white rounded-lg">
+                                <!-- Seção para exibir o trailer -->
+                                <h6 class="w-98/100 ">Assista ao Trailer</h6>
+                                <!-- Título "Assista ao Trailer" -->
+                                <div class="self-center h-[255px]">
+                                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/5kcdRBHM7kM"
+                                        title="Super Mario Odyssey Trailer" allowfullscreen></iframe>
+                                    <!-- Frame do YouTube com o trailer do Super Mario Odyssey -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Banner Mario Fim-->
+                <!--Banner Pokemon Inicio-->
+                <div class="swiper-slide" id="slide-2">
+                    <!-- Segundo slide do carrossel -->
+                    <img src="images/pokemon-legends-arceus.jpeg" alt="Banner do Pokemon Legends Arceus">
+                    <!-- Imagem do banner do jogo Pokemon Legends Arceus -->
+
+                    <div class="backscene"></div>
+                    <!-- Div para uma camada de fundo -->
+                    <div class="banner">
+                        <!-- Banner de conteúdo adicional -->
+
+                        <div class="left">
+                            <!-- Seção à esquerda do banner -->
+                            <div class="features">
+                                <!-- Div para exibir as características do jogo -->
+                                <div class="rating flex flex-col t-0">
+                                    <!-- Exibe a nota de avaliação do jogo -->
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col">
+                                            <span
+                                                class="pb-0 mb-0 text-(--primary) text-4xl font-2 self-center">9.2</span>
+                                            <span class="mt-0 pt-0 text-(--primary) self-center">&#9733 &#9733 &#9733
+                                                &#9733
+                                                &#9733</span>
+                                        </div>
+                                        <!-- Nota de avaliação -->
+                                        <div class="flex flex-col justify-center items-center">
+                                            <!-- Conteúdo relacionado à avaliação -->
+                                            <span class="subtitle text-(--primary)">M E T A S C O R E</span>
+                                            <!-- Subtítulo com a palavra "Metascore" -->
+                                            <h4>Bom</h4>
+                                            <!-- Classificação "Bom" -->
+                                        </div>
+                                    </div>
+                                    <div class="content self-center">
+                                        <!-- Classificação "Ótimo" -->
+                                        <span>Prepare-se para uma aventura Pokemon!</span>
+                                        <!-- Descrição do jogo -->
+                                    </div>
+                                </div>
+                                <div class="pricing">
+                                    <!-- Seção para exibir informações de compra -->
+                                    <a href="https://www.nintendo.com/us/store/products/pokemon-legends-arceus-switch/"
+                                        target="_blank">
+                                        <!-- Link vazio para a compra do jogo -->
+                                        <div class="content">
+                                            <!-- Conteúdo relacionado ao preço -->
+                                            <span class="subtitle">Pokemon Legends</span>
+                                            <!-- Título do jogo -->
+
+                                            <h4>COMPRE AGORA</h4>
+                                            <!-- Chamada para compra -->
+                                            <span>Ação, RPG</span>
+                                            <!-- Categorias do jogo -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h1 class="pokemon-title">Pokemon</h1>
+                            <!-- Título "Pokemon" -->
+                        </div>
+                        <img src="images/red.png" alt="Treinador Pokemon Red" class="pokemon">
+                        <!-- Imagem do treinador Pokemon Red -->
+                        <div class="right">
+                            <!-- Seção à direita do banner -->
+                            <ul class="description">
+                                <!-- Lista de descrição do jogo -->
+                                <li class="bg-black/50 rounded-lg flex flex-col">
+                                    <h5 class="flex "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <rect width="14" height="0" x="5" y="5" fill="currentColor">
+                                                <animate fill="freeze" attributeName="height" begin="0.6s" dur="0.2s"
+                                                    values="0;3" />
+                                            </rect>
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2">
+                                                <path stroke-dasharray="64" stroke-dashoffset="64"
+                                                    d="M12 4h7c0.55 0 1 0.45 1 1v14c0 0.55 -0.45 1 -1 1h-14c-0.55 0 -1 -0.45 -1 -1v-14c0 -0.55 0.45 -1 1 -1Z">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s"
+                                                        values="64;0" />
+                                                </path>
+                                                <path stroke-dasharray="4" stroke-dashoffset="4" d="M7 4v-2M17 4v-2">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                        begin="0.6s" dur="0.2s" values="4;0" />
+                                                </path>
+                                                <path stroke-dasharray="12" stroke-dashoffset="12" d="M7 11h10">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                        begin="0.8s" dur="0.2s" values="12;0" />
+                                                </path>
+                                                <path stroke-dasharray="8" stroke-dashoffset="8" d="M7 15h7">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="1s"
+                                                        dur="0.2s" values="8;0" />
+                                                </path>
+                                            </g>
+                                        </svg>Data de Lançamento</h5>
+                                    <p class="">28 de Janeiro</p>
+                                    <!-- Data de lançamento do jogo -->
+                                </li>
+                                <li class="bg-black/50 rounded-lg flex flex-col">
+                                    <h5><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M15 7.29V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4.29c0 .13.05.26.15.35l2.5 2.5c.2.2.51.2.71 0l2.5-2.5c.09-.09.14-.21.14-.35M7.29 9H3c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h4.29c.13 0 .26-.05.35-.15l2.5-2.5c.2-.2.2-.51 0-.71l-2.5-2.5A.48.48 0 0 0 7.29 9M9 16.71V21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-4.29a.47.47 0 0 0-.15-.35l-2.5-2.5c-.2-.2-.51-.2-.71 0l-2.5 2.5c-.09.09-.14.21-.14.35m7.35-7.56l-2.5 2.5c-.2.2-.2.51 0 .71l2.5 2.5c.09.09.22.15.35.15H21c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1h-4.29a.45.45 0 0 0-.36.14" />
+                                        </svg>Modos de jogo</h5>
+                                    <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+                                    <!-- Modos de jogo disponíveis -->
+                                </li>
+                            </ul>
+                            <div
+                                class="flex bg-(--primary)/80 hover:border hover:scale-110 w-100/98 h-auto flex-col text-end text-white rounded-lg">
+                                <!-- Seção para exibir o trailer -->
+                                <h6 class="w-98/100 ">Assista ao Trailer</h6>
+                                <!-- Título "Assista ao Trailer" -->
+                                <div class="self-center h-[255px]">
+                                    <iframe width="1280" height="720"
+                                        src="https://www.youtube.com/embed/I4RynqpahT8?si=PoF0brXTd5LZKKQj"
+                                        title="Pokémon Legends: Arceus" allowfullscreen></iframe>
+                                    <!-- Frame do YouTube vazio para o trailer do jogo -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Banner Pokemon Fim-->
+                <!--Banner Zelda Inicio-->
+                <div class="swiper-slide" id="slide-3">
+                    <!-- Segundo slide do carrossel -->
+                    <img src="images/The-Legend-of-Zelda-Breath-of-the-Wild.jpeg"
+                        alt="Banner de Zelda Breath of the Wild">
+                    <!-- Imagem do banner do jogo Pokemon Legends Arceus -->
+
+                    <div class="backscene"></div>
+                    <!-- Div para uma camada de fundo -->
+                    <div class="banner">
+                        <!-- Banner de conteúdo adicional -->
+
+                        <div class="left">
+                            <!-- Seção à esquerda do banner -->
+                            <div class="features">
+                                <!-- Div para exibir as características do jogo -->
+                                <div class="rating flex flex-col t-0">
+                                    <!-- Exibe a nota de avaliação do jogo -->
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col">
+                                            <span
+                                                class="pb-0 mb-0 text-(--primary) text-4xl font-2 self-center">9.2</span>
+                                            <span class="mt-0 pt-0 text-(--primary) self-center">&#9733 &#9733 &#9733
+                                                &#9733
+                                                &#9733</span>
+                                        </div>
+                                        <!-- Nota de avaliação -->
+                                        <div class="flex flex-col justify-center items-center">
+                                            <!-- Conteúdo relacionado à avaliação -->
+                                            <span class="subtitle text-(--primary)">M E T A S C O R E</span>
+                                            <!-- Subtítulo com a palavra "Metascore" -->
+                                            <h4>Bom</h4>
+                                            <!-- Classificação "Bom" -->
+                                        </div>
+                                    </div>
+                                    <div class="content self-center">
+                                        <span>Descrição do Jogo Mario Odyssey</span>
+                                        <!-- Descrição do jogo -->
+                                    </div>
+                                </div>
+                                <div class="pricing">
+                                    <!-- Seção para exibir informações de compra -->
+                                    <a href="https://www.nintendo.com/us/store/products/the-legend-of-zelda-breath-of-the-wild-switch/"
+                                        target="_blank">
+                                        <!-- Link vazio para a compra do jogo -->
+                                        <div class="content">
+                                            <!-- Conteúdo relacionado ao preço -->
+                                            <span class="subtitle">Zelda Breath</span>
+                                            <!-- Título do jogo -->
+                                            <h4>COMPRE AGORA</h4>
+                                            <!-- Chamada para compra -->
+                                            <span>Ação, RPG</span>
+                                            <!-- Categorias do jogo -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <h1 class="pokemon-title">Zelda</h1>
+                            <!-- Título "Pokemon" -->
+                        </div>
+                        <img src="images/link.png" alt="Zelda" class="pokemon">
+                        <!-- Imagem do treinador Pokemon Red -->
+                        <div class="right">
+                            <!-- Seção à direita do banner -->
+                            <ul class="description">
+                                <!-- Lista de descrição do jogo -->
+                                <li class="bg-black/50 rounded-lg flex flex-col">
+                                    <h5 class="flex "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <rect width="14" height="0" x="5" y="5" fill="currentColor">
+                                                <animate fill="freeze" attributeName="height" begin="0.6s" dur="0.2s"
+                                                    values="0;3" />
+                                            </rect>
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2">
+                                                <path stroke-dasharray="64" stroke-dashoffset="64"
+                                                    d="M12 4h7c0.55 0 1 0.45 1 1v14c0 0.55 -0.45 1 -1 1h-14c-0.55 0 -1 -0.45 -1 -1v-14c0 -0.55 0.45 -1 1 -1Z">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s"
+                                                        values="64;0" />
+                                                </path>
+                                                <path stroke-dasharray="4" stroke-dashoffset="4" d="M7 4v-2M17 4v-2">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                        begin="0.6s" dur="0.2s" values="4;0" />
+                                                </path>
+                                                <path stroke-dasharray="12" stroke-dashoffset="12" d="M7 11h10">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                        begin="0.8s" dur="0.2s" values="12;0" />
+                                                </path>
+                                                <path stroke-dasharray="8" stroke-dashoffset="8" d="M7 15h7">
+                                                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="1s"
+                                                        dur="0.2s" values="8;0" />
+                                                </path>
+                                            </g>
+                                        </svg>Data de Lançamento</h5>
+                                    <p class="">28 de Janeiro</p>
+                                    <!-- Data de lançamento do jogo -->
+                                </li>
+                                <li class="bg-black/50 rounded-lg flex flex-col">
+                                    <h5> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M15 7.29V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v4.29c0 .13.05.26.15.35l2.5 2.5c.2.2.51.2.71 0l2.5-2.5c.09-.09.14-.21.14-.35M7.29 9H3c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h4.29c.13 0 .26-.05.35-.15l2.5-2.5c.2-.2.2-.51 0-.71l-2.5-2.5A.48.48 0 0 0 7.29 9M9 16.71V21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-4.29a.47.47 0 0 0-.15-.35l-2.5-2.5c-.2-.2-.51-.2-.71 0l-2.5 2.5c-.09.09-.14.21-.14.35m7.35-7.56l-2.5 2.5c-.2.2-.2.51 0 .71l2.5 2.5c.09.09.22.15.35.15H21c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1h-4.29a.45.45 0 0 0-.36.14" />
+                                        </svg>Modos de jogo</h5>
+                                    <p>Modo TV, Modo Semiportátil, Modo Portátil</p>
+                                    <!-- Modos de jogo disponíveis -->
+                                </li>
+                            </ul>
+                            <div
+                                class="flex bg-(--primary)/80 hover:border hover:scale-110 w-100/98 h-auto flex-col text-end text-white rounded-lg">
+                                <!-- Seção para exibir o trailer -->
+                                <h6 class="w-98/100 ">Assista ao Trailer</h6>
+                                <!-- Título "Assista ao Trailer" -->
+                                <div class="self-center h-[255px]">
+                                    <iframe width="1280" height="720"
+                                        src="https://www.youtube.com/embed/zw47_q9wbBE?si=lsZigWTAcop20kQ9"
+                                        title="The Legend of Zelda: Breath of the Wild" allowfullscreen></iframe>
+                                    <!-- Frame do YouTube vazio para o trailer do jogo -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Banner Zelda Fim-->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <!-- Botão de navegação para o slide anterior -->
+            <div class="swiper-button-next"></div>
+            <!-- Botão de navegação para o próximo slide -->
+            <footer>
+                <p>2025 &copy; Todos os direitos reservados á Jeferson Braga Dentro do div</p>
+            </footer>
+        </section>
+        <section class="overlay" id="modal-login">
+            <div class="modal-form-login">
+                <button onclick="closeModalLogin()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-dasharray="16" stroke-dashoffset="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 7l10 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="16;0"/></path><path d="M17 7l-10 10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.4s" values="16;0"/></path></g></svg>
+                </button>
+                <h1>Login</h1>
+                <form action="">
+                    <input type="email" id="email" placeholder="Email" />
+                    <input type="password" id="senha" placeholder="Senha" />
+                    <button type="submit">Entrar</button>
+                </form>
+                <a href="https://accounts.google.com/?hl=pt-br" target="_blank" class="login-google"><img
+                        src="images/google-icon.svg" alt="logo google" />Entrar com a
+                    Google</a>
+            </div>
+        </section>
+    </main>
+    <!-- Fim Conteúdo da página -->
+    <!-- Inicio Rodapé da página -->
+    <footer>
+        2025 &copy; Todos os direitos reservados á Jeferson Braga
+    </footer>
+    <!-- Fim Rodapé da página -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script da biblioteca Swiper para o funcionamento do carrossel -->
+    <script type="text/JavaScript" src="js/app.js"></script>
+    <!-- Script externo para a lógica JavaScript personalizada -->
+</body>
+
+</html>
